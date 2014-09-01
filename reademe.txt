@@ -1,0 +1,142 @@
+json格式定义
+{
+code:'000' 
+msg:'000' 
+data:[
+       {key:value},
+       {key:value},
+     ]
+}
+说明：code   成功且有数据  000
+             成功但无数据 001
+             调用失败 100
+
+第三方认证接口：
+接口：/auth/
+参数：{username:'test',id='1111'}
+提交形式： get
+返回状态: code:000 成功 
+               100 失败
+
+添加关注网站接口
+接口:/saveSubs/
+参数:  {
+        'feed_id' : 12 , #必填
+        'folder_id' : 3  #如果没有则为空 
+       }
+提交形式 : gets
+返回状态: {
+             "code":"0",   # 0 代表成功, 100代表用户已经订阅, 101代表用户提交参数非法, 102代表用户未登录
+             "title" :"订阅rss标题" ,
+             "feed_id" : 23 #订阅rss的id
+          }
+
+查询订阅内容接口
+接口:/feed/
+参数: {'p':'1',  //  代表当前访问的第几页，如果为空表示第一页
+       'feedid' :'23' //表示当前要访问的订阅网站，如果为空表示随机访问全部的订阅内容
+      }
+返回 { 'code' : '000',    # code 000 表示成功，100表示失败
+       'feed_id' : 12 ,    # 表示当前的feed id
+       'feed_title' : 'feed title' #当前订阅的标题
+       'data':[
+                {
+                  'content':'xxx',
+                  'link':'xxx',
+                  'title':'xxx'
+                }
+              ]
+     }
+
+      
+查询新rss接口
+接口：/subs/
+参数: {
+        'keyword':'http://news.163.com/special/00011K6L/rss_newstop.xml'
+        'p' : 1
+      }
+返回 { 'code' : '0',    # code 0 表示成功，100表示失败
+       'feed_id' : 12 ,    # 表示当前的feed id
+       'feed_title' : 'feed title' #当前订阅的标题
+       'data':[
+                {
+                  'url':'xxx',
+                  'title':'xxx' ,
+                  'contentSnippet':'xxxxx' ,
+                  'time : '2014-03-12 12:12:23' ,
+                  'id' : '34'
+                }
+              ]
+     }
+    
+退出系统
+接口: /logout
+
+增加目录
+接口: /addfolder
+参数: {'name':'folder_name'}
+返回: {
+        'code': '000',   000代表成功，100表示失败
+        'folder_id' : folderid 添加目录成功后返回的folder id
+      }
+
+删除目录
+接口: /delfolder/
+参数: {'fid':34}
+返回: {'code':'000'}
+
+移动目录
+接口: /updatefolder/
+参数: {
+       'feedid':'234',
+       'from_folderid' : '34',
+       'to_folderid' : '45'
+      }
+参数返回
+      {'code':'000'} 000表示成功，否则失败
+
+注册接口
+页面地址: reader/templates/reader/register.html
+
+注册前接口: /before_register/
+参数: email
+返回: {
+        'code':'0'  # 0 代表邮件发送后台发送， 1代表邮件格式不正确
+      }
+
+登录接口: /login/
+参数 : { 'email' : 'admin@digg.com' ,
+         'password' : '123456' }
+返回 : {
+         'code' : '0' # 0 代表成功， 1代表认证失败, 2代表邮件格式不正确
+       }
+
+注册接口: /register/
+注册接口: 发送邮件中包含的地址点击回来
+参数 : {
+         'email' : '' ,
+         'password1' : ''
+         'password2' : ''
+         'username' : ''
+       }
+返回 : {
+         'code' : '0' # 0代表成功, 1代表邮箱重复, 2代表用户名重复
+       }       
+
+搜索接口: /search/
+参数 : {
+         'keyword': 'infoq'
+       }
+返回: 
+       {
+         'code': 0  # 0 代表成功
+         'data': 
+          [
+            { 'url' : 'http://www.infoq.com/feed/java'
+              'contentSnippet' : 'How Do You Access Your Relational Data from Java'
+              'title' : 'Java Community Content'
+              'flag' : 0 # 0 代表没有订阅, 1代表已经订阅
+            }
+          ]
+          'keyword' : 'java' 
+       }

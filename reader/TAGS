@@ -1,0 +1,118 @@
+
+models.py,140
+class UserSubscribe(3,30
+class UserAttribute(8,183
+class Feed(15,460
+class Story(21,685
+class Folder(31,1065
+class RUserStory(35,1178
+
+SubsForm.py,130
+class SubsForm(4,82
+class RegistrationForm(8,222
+      def clean(19,846
+class BeforeRegister(32,1413
+class LoginForm(35,1500
+
+views.py,1857
+class HomeView(40,1132
+    def get_queryset(44,1240
+    def get_context_data(48,1348
+    def get_random_stories(59,1816
+    def getfolders(65,2003
+class _RequestPassingFormView(84,2639
+    def get(91,2872
+    def post(99,3177
+    def get_form_class(110,3592
+    def get_form_kwargs(113,3706
+    def get_initial(116,3839
+    def get_success_url(119,3947
+    def form_valid(124,4180
+    def form_invalid(127,4296
+class IndexView(130,4416
+      def dispatch(133,4477
+class JSONResponseMixin(145,4861
+    def render_to_response(146,4894
+    def get_json_response(150,5081
+    def convert_context_to_json(156,5357
+class LoginView(165,5742
+      def post(170,5875
+class BeforeRegistrationView(203,7353
+      def post(206,7444
+      def send_mail(218,7865
+      def form_invalid(225,8220
+class RegistrationView(232,8332
+    def dispatch(239,8621
+    def form_invalid(249,8993
+    def form_valid(254,9152
+    def get_context_data(260,9370
+    def registration_allowed(268,9686
+    def register(271,9752
+def auth(288,10508
+def search_feed(311,11458
+def google_feed_search(326,11859
+def search_rss_url(371,13490
+def subscribe(392,14041
+def outsystem(415,14929
+def save_user_subscribe(420,15041
+def save_user_searched_feed(444,15990
+def add_folder(462,16665
+def dele_folder(469,16903
+def update_subs_folder(479,17227
+def get_stories(490,17719
+def mark_story_readed(510,18276
+def get(525,18732
+def filter_user_have_read_stories(550,19782
+def change_time_format_for_view(564,20325
+def convert_dt_to_aisa_timezone(576,20762
+class ModelFeed:ModelFeed584,21042
+    def __init__(586,21061
+    def feeddata 589,21111
+    def batchSave(593,21218
+    def get_feed_last_update_time(628,22776
+    def remove_old_entries(634,22990
+    def get_latest_story(641,23229
+    def moreUp2Date(649,23510
+    def parse 658,23882
+
+prpcrypt.py,95
+class prpcrypt(9,109
+    def __init__(10,127
+    def encrypt(14,212
+    def decrypt(19,373
+
+decorators.py,184
+def add_http_var(10,311
+    def wrap(17,597
+        def decorator(18,617
+def json_response(32,1087
+    def decorator(38,1270
+def requires_post(57,2109
+    def decorator(61,2214
+
+tests.py,461
+class ReaderRss(17,487
+    def prelogin(19,515
+    def test_keyword(29,844
+    def test_auth(38,1108
+    def test_user_subs(49,1486
+    def test_parse(60,1912
+    def test_subs(71,2386
+    def test_add_folder(81,2758
+    def test_update_folder(88,3009
+    def test_del_folder(106,3868
+    def test_search_rss_url(126,4865
+    def test_filter_user_have_read_stories(136,5297
+    def test_save_search_feed(148,5711
+    def test_search_feed(164,6225
+
+fullrssmaker.py,115
+def grabContent(19,452
+def fixLinks(95,2580
+def clean(104,2844
+def killDivs(111,3009
+def upgradeLink(127,3566
+
+__init__.py,0
+
+urls.py,0

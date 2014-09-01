@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title> {% block title %}悦读{% endblock %}</title>
+        <meta name="description" content="" />
+        <meta name="author" content="zhengbiao" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta property="wb:webmaster" content="2488eba5fce3edd3" />
+        <meta property="qc:admins" content="2355567507776316110063757" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="stylesheet" type="text/css" href="/static/css/welcome.css" />
+    </head>
+
+    <body class="welcome">
+        <div id="content-main" class="content-main">
+            <div class="content-primary" role="main">
+                <div id="onboarding-billboard" class="onboarding-billboard">
+                    <div id="onboarding-step-welcome" class="onboarding-step onboarding-step-signup m-reg">
+                        <h1 id="digg-reader-logo" class="onboarding-hed digg-reader-logo logo-large">Digg Reader</h1>
+
+                        <div class="contc f-cb">
+                            <div class="contl" style="float: none;margin:0 auto;">
+                                <h3>安全信息设置</h3>
+                                <form action="http://diggg.sinaapp.com/register/" onsubmit="return false;" class="ztag" method="post">
+                                    <ul class="w-user w-user-1">
+                                        <li class="w0">
+                                            <div class="inpt ztag">
+                                                <label class="ztag">邮箱</label>
+                                                <input type="text" class="txt" id="email" placeholder="邮箱" tabindex="1" value="{{ email }}" >
+
+                                            </div>
+                                        </li>
+                                        <li class="w0">
+                                            <div class="inpt">
+                                                <label class="ztag">密码</label>
+                                                <input type="password" autocomplete="off" placeholder="密码"  id="password"  class="txt ztag" name="password" tabindex="2">
+                                            </div>
+                                        </li>
+                                         <li class="w0">
+                                            <div class="inpt">
+                                                <label class="ztag">确认密码</label>
+                                                <input type="password" autocomplete="off" placeholder="确认密码" id="passwordAgain"  class="txt ztag" name="password" tabindex="3">
+                                            </div>
+                                        </li>
+                                         <li class="w0">
+                                            <div class="inpt ztag">
+                                                <label class="ztag">昵称</label>
+                                                <input type="text" class="txt" placeholder="昵称" id="nickName" tabindex="4">
+                                            </div>
+                                        </li>
+                                        <li class="w0 w2">
+                                            <button class="btn ztag" id="register" type="submit" tabindex="5">
+                                                <span>注册提交</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                      {% csrf_token %}
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="/static/js/libs/seaJs/sea-debug.js"></script>
+        <script type="text/javascript">
+            seajs.use("/static/js/init");
+        </script>
+    </body>
+</html>
+
+  
+
+
+

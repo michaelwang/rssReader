@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+	<html class="no-js ie6 oldie" lang="en">
+	<![endif]-->
+	<!--[if IE 7]>
+		<html class="no-js ie7 oldie" lang="en">
+		<![endif]-->
+		<!--[if IE 8]>
+			<html class="no-js ie8 oldie" lang="en">
+			<![endif]-->
+			<!--[if gt IE 8]>
+				<!-->
+				<html class=" js no-flexbox flexboxlegacy no-touch boxshadow cssanimations csstransforms csstransforms3d csstransitions no-ipad no-iphone no-ipod no-appleios positionfixed lastchild"
+				lang="en">
+				<!--<![endif]-->
+				<head>
+					<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+					<script type="text/javascript">
+						var _sf_startpt = (new Date()).getTime()
+					</script>
+					<meta name="apple-itunes-app" content="app-id=362872995, affiliate-data=bevbOqLt02I, app-argument=digg://">
+					<meta charset="utf-8">
+					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					<meta name="apple-mobile-web-app-capable" content="yes">
+					<meta name="twitter:card" content="summary">
+					<meta name="twitter:site" content="@digg">
+					<meta property="og:type" content="website">
+					<meta property="og:title" content="Digg Reader">
+					<meta name="application-name" content="Digg">
+					
+					<meta name="msapplication-TileColor" content="#ffffff">
+					
+					<title>
+						Digg Reader
+					</title>
+					<link rel="stylesheet" href="./css/diggreader.css" type="text/css"
+					media="screen">
+					<!--[if lt IE 9]>
+						<script src="//static.digg.com/a/static/js/external/html5shiv/3.6.2/html5shiv.min.js?v=62ac5">
+						</script>
+					<![endif]-->
+					<script type="text/javascript">
+						var _gaq = _gaq || [];
+						_gaq.push(['_setAccount', 'UA-33556916-1']);
+						_gaq.push(['_setDomainName', '.digg.com']);
+						_gaq.push(['_trackPageview']); (function() {
+							var ga = document.createElement('script');
+							ga.type = 'text/javascript';
+							ga.async = true;
+							ga.src = ('https:' == document.location.protocol ? 'https://ssl': 'http://www') + '.google-analytics.com/ga.js';
+							var s = document.getElementsByTagName('script')[0];
+							s.parentNode.insertBefore(ga, s);
+						})();
+					</script>
+					<noscript>
+						<img src="http://www.google-analytics.com/__utm.gif?utmwv=5.3.9&utmn=3152075558&utme=&utmcs=-&utmsr=-&utmsc=-&utmul=-&utmje=0&utmfl=-&utmdt=-&utmhn=digg.com&utmhid=3152075558&utmr=-&utmp=/nojs/reader/feed/http%3A%2F%2Fdigg.com%2Fuser%2F5d5d0f3dd76043668297c47d4b84e0c6%2Fsaved.rss&utmac=UA-33556916-1&utmcc=__utma%3D15193633.1603226539.1384763008.1384763008.1384763008.2%3B%2B__utmz%3D15193633.1384763008.2.2.utmcsr%3D_SOURCE_%7Cutmccn%3D_CAMPAIGN_%7Cutmcmd%3D_MEDIUM_%7Cutmctr%3D_KEYWORD_%7Cutmcct%3D_CONTENT_%3B%2B__utmv%3D15193633.-%3B;"
+						border="0" />
+					</noscript>
+					<script src="./js//all.js" async="" id="facebook-jssdk">
+					</script>
+				</head>
+				<body style="" class="reader reader-public reader-authed">
+					<div class="site-header-container page-container" id="site-header-container">
+						<div class="header-wrapper">
+							<header class="site-header" role="banner">
+								<h1 class="site-header-logo-container">
+									<a href="http://digg.com/reader" id="site-header-logo" class="image-replace">
+										Digg
+									</a>
+								</h1>
+							</header>
+							<div id="reader-app-msg-container">
+							</div>
+							<div class="site-header-nav" role="navigation">
+								<ul class="nav-list reader-nav" id="reader-nav">
+									<li class="nav-item reader-nav-text-item reader-nav-faq">
+										<a href="http://support.digg.com/" target="_blank">
+											FAQ
+										</a>
+									</li>
+									<li class="nav-item reader-nav-text-item reader-nav-shortcuts">
+										<a href="#">
+											Keyboard Shortcuts
+										</a>
+									</li>
+									<li class="nav-item reader-nav-item reader-nav-mark-as-read">
+										Mark all as read
+									</li>
+									<li class="nav-item reader-nav-item reader-nav-item-tooltip reader-nav-view-type-selector">
+										<div class="list all" id="view-region-view-type-selector">
+											<div class="view-type-selector">
+												<div class="show-type-label" id="show-type-label">
+													All items
+												</div>
+												<div class="reader-nav-tooltip view-types">
+													<ul class="reader-nav-tooltip-list">
+														<li class="reader-nav-tooltip-list-item view-type view-type-expanded">
+															<a id="btn-expanded" data-view-type="expanded" href="#expanded">
+																Expanded
+															</a>
+														</li>
+														<li class="reader-nav-tooltip-list-item view-type view-type-list">
+															<a id="btn-list" data-view-type="list" href="#list">
+																List
+															</a>
+														</li>
+														<li class="reader-nav-tooltip-list-item show-type show-type-all">
+															<a id="btn-all" data-show-type="all" href="#all">
+																All items
+															</a>
+														</li>
+														<li class="reader-nav-tooltip-list-item show-type show-type-unread">
+															<a id="btn-unread" data-show-type="unread" href="#unread">
+																Unread only
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="nav-item reader-nav-item reader-nav-item-tooltip reader-nav-settings">
+										<div class="reader-nav-tooltip">
+											<ul class="reader-nav-tooltip-list">
+												<li class="reader-nav-tooltip-list-item">
+													<a href="http://digg.com/settings">
+														Settings
+													</a>
+												</li>
+												<li class="reader-nav-tooltip-list-item">
+													<a href="http://digg.com/logout">
+														Sign Out
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="content-main" class="content-main">
+						<div class="content-primary" role="main">
+							<div id="view-region-readerapp" class="view-region-readerapp">
+								<div>
+									<div style="height: 712px;" class="col-left">
+										<nav style="height: 646px;" id="view-region-nav" class="view-region-nav scrollable">
+											<div id="view-region-nav">
+												<ul id="dr-persistent-nav" class="dr-list dr-persistent-nav">
+													<li class="dr-list-item dr-nav-all dr-label-has-unread" id="dr-nav-all"
+													data-folder="digg.com/root" data-feed-url="digg.com/root">
+														<div class="dr-label dr-feed-label" data-unread="7">
+															<span title="All" class="dr-label-txt">
+																All
+															</span>
+														</div>
+													</li>
+													<li class="dr-list-item dr-nav-popular" id="dr-nav-popular">
+														<div class="dr-label dr-feed-label" data-unread="0">
+															<span title="Popular" class="dr-label-txt">
+																Popular
+															</span>
+														</div>
+													</li>
+													<li class="dr-list-item dr-nav-diggs" id="dr-nav-diggs">
+														<div class="dr-label dr-feed-label" data-unread="0">
+															<span title="Diggs" class="dr-label-txt">
+																Diggs
+															</span>
+														</div>
+													</li>
+													<li class="dr-list-item dr-nav-saved dr-feed-selected" id="dr-nav-saved">
+														<div class="dr-label dr-feed-label" data-unread="0">
+															<span title="Saved" class="dr-label-txt">
+																Saved
+															</span>
+														</div>
+													</li>
+												</ul>
+												<div id="dr-subscription-list">
+													<ul class="dr-root-feed-list dr-feed-list sortable" data-feed-url="digg.com/root"
+													data-folder="digg.com/root" id="root-feed-list">
+														<li data-sort-position="0" data-parent="digg.com/root" class="dr-list-item dr-feed-list-item dr-label-has-unread nav-item-focused dr-feed-selected"
+														data-title="坏脾气的小肥" data-html-url="http://firecacada.blog.163.com" data-feed-url="http://firecacada.blog.163.com/rss/"
+														draggable="true">
+															<div class="dr-feed-badge" style="background-image: url(//static.digg.com/icons/03b1fc2913e3226bb5fa9590978d202a.ico); background-size: 16px;">
+															</div>
+															<div class="dr-label dr-feed-label" data-unread="7">
+																<span title="坏脾气的小肥" class="dr-label-txt">
+																	坏脾气的小肥
+																</span>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div id="dr-tags">
+											</div>
+											<div>
+											</div>
+										</nav>
+										<div id="view-add" class="view-add">
+											<div class="">
+												<div class="dr-add-btn">
+													<div class="dr-add-btn-label">
+														<div class="btn-label-inner">
+															Add
+														</div>
+													</div>
+													<div class="tooltip-subscription-add">
+														<ul class="tooltip-list">
+															<li class="tooltip-list-item tooltip-list-input">
+																<form id="tooltip-subscription-add-form">
+																	<input class="" id="tooltip-subscription-add-form-input" placeholder="Search or Enter a URL"
+																	autocomplete="off" type="text">
+																</form>
+															</li>
+															<li class="tooltip-list-item btn-browse-categories">
+																Browse categories
+															</li>
+															<li class="tooltip-list-item btn-add-folder">
+																New folder
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div style="height: 712px;" class="col-right">
+										<section style="height: 713px;" id="view-region-main-container" class="view-region-main-container scrollable">
+											<div class=" list">
+												<header class="feed-stream-header">
+													<h2 id="feed-title" class="feed-title">
+														<a href="http://firecacada.blog.163.com/" target="_blank">
+															坏脾气的小肥
+														</a>
+													</h2>
+													<div class="stream-edit">
+														Edit
+													</div>
+													<!-- output i18n('Edit') -->
+												</header>
+												<article class="feeditem-list feeditem-read api">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.47 我有什么方法可以拯救这款UGC产品？
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																我是 一名网络宣传总监，老大忽然想要做一款APP产品，哦！APP！我真是从来没有想过我们公司还可以做这个，要知道我的公司是一家以印刷产品为主的传统企
+																业，怎么做APP！？莫非我们老大看了任天堂的发展史，想要像他们那样进军IT行业么？说实话一开始我还有点小激动，新的项目就代表新的机遇。 等到实际操作的时候，我才知道这件事情有多难。第一个遇到难题的是我们的人事部经理，在完全陌生的行业招到了一个组的...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/7074376201310972458626">
+																		Nov 9
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201310972458626&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.47+%E6%88%91%E6%9C%89%E4%BB%80%E4%B9%88%E6%96%B9%E6%B3%95%E5%8F%AF%E4%BB%A5%E6%8B%AF%E6%95%91%E8%BF%99%E6%AC%BEUGC%E4%BA%A7%E5%93%81%EF%BC%9F"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201310972458626&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.46 对IT行业始终无爱的转行迷思
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																大四 培训了半年软件开发，然后在一家大的软件公司实习并工作了7个月，之所以离职是因为公司加班太狠，一直忍着，而且经常加到半夜我一个女生还要打车回家太危
+																险，出了一次车祸（人没事），当时对我来说反而是个解脱，因为惯性太大，忙的都没时间想离职，人情牵绊也不好意思。然后不想干软件开发了，觉得太累，也不
+																喜欢。 顺便说下，我对软件开发，其实一直都不喜欢，就是毕业不知道干什么，当时觉得做软件听上去很牛掰的...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/7074376201310954353463">
+																		Nov 9
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201310954353463&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.46+%E5%AF%B9IT%E8%A1%8C%E4%B8%9A%E5%A7%8B%E7%BB%88%E6%97%A0%E7%88%B1%E7%9A%84%E8%BD%AC%E8%A1%8C%E8%BF%B7%E6%80%9D"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201310954353463&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read feed-item-focused expanded">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																COC异闻录
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																1、年中开始玩COC，刚开始玩就花一百多块钱升到了5农民，被同事嘲笑为“人民币玩家”。没多久，把老婆也拉进来玩COC，她也花钱升到了4农民，同事改称“人民币全家”。
+																2、玩COC极大增进了我的家庭和睦，和老婆之间的沟通频率提高了3倍，多出来的部分为“捐兵”“赶快捐兵”“妈的被推平了，捐兵”，或是气急败坏的“都怪你不及时捐兵，又被推了40万金水！”
+																3、我老婆基本不打仗，一边采矿生产，一边...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/707437620131094833451">
+																		Nov 9
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620131094833451&amp;via=Digg&amp;text=COC%E5%BC%82%E9%97%BB%E5%BD%95"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620131094833451&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+													<div class="story-detail-view">
+														<div class="story-detail-view-container">
+															<div class="story-detail-content">
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620131094833451&amp;via=Digg&amp;text=COC%E5%BC%82%E9%97%BB%E5%BD%95"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620131094833451&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+																<h3 class="story-title">
+																	<a href="http://firecacada.blog.163.com/blog/static/707437620131094833451"
+																	target="_blank">
+																		COC异闻录
+																	</a>
+																</h3>
+																<div class="story-meta">
+																	<span class="story-meta-item">
+																		坏脾气的小肥
+																	</span>
+																	<span class="story-meta-item">
+																		by 纯银
+																	</span>
+																	<span class="story-meta-item story-timestamp">
+																		Nov 9
+																	</span>
+																</div>
+																<div class="detail-body">
+																	<div>
+																		<div>
+																			1、年中开始玩COC，刚开始玩就花一百多块钱升到了5农民，被同事嘲笑为“人民币玩家”。没多久，把老婆也拉进来玩COC，她也花钱升到了4农民，同事改称“人民币全家”。
+																		</div>
+																		<div>
+																			<br>
+																		</div>
+																		<div>
+																			2、玩COC极大增进了我的家庭和睦，和老婆之间的沟通频率提高了3倍，多出来的部分为“捐兵”“赶快捐兵”“妈的被推平了，捐兵”，或是气急败坏的“都怪你不及时捐兵，又被推了40万金水！”
+																		</div>
+																		<div>
+																			<br>
+																		</div>
+																		<div>
+																			3、 我老婆基本不打仗，一边采矿生产，一边给我捐兵。但采矿来钱太慢，我每个月去见她的时候，拿她手机打仗，喜滋滋地报功“老婆我又帮你抢了60万金水。”
+																			“谢谢老公。”有一天她忽然想明白了：“我这个号就是给你捐兵的，相当于你的小号，还谢个屁啊？”从此不再“谢谢老公”。
+																		</div>
+																		<div>
+																			<br>
+																		</div>
+																		<div>
+																			4、和老婆每月见一面，每次离开时都要千叮万嘱：接下来圣水升级这几样，顺序是什么；黄金升级那几样，顺序是什么；有时候还写在记事本上叮嘱她照办。如果不按顺序来，我会发很大脾气……
+																		</div>
+																		<div>
+																			<br>
+																		</div>
+																		<div>
+																			5、有次跟老婆吵架，她恶狠狠给我捐了5个2级野蛮人，寡人发雷霆之怒，把她踢出公会。同事很惊，来问为什么？我说这就是捐2级野蛮人的下场！直到她道歉以后再重新批准入会。自此老婆不敢再给我捐2级野蛮人，但留着野蛮人死活不升级，在公会里看谁不顺眼就捐给他。
+																		</div>
+																		<div>
+																			<br>
+																		</div>
+																		<div>
+																			6、好基友王伯用公司的测试iPad来玩COC，我有次拿回iPad测试的时候，晚上把他的城墙拆了一块放外面，留出偌大缺口，第二天果然被人从此攻入推平。王伯没疑心，以为自己手贱点错了，但运营妹子莱拉跑去告密，我被王伯痛打一顿。
+																		</div>
+																		<div>
+																			<br>
+																		</div>
+																		<div>
+																			7、还是我拿回iPad测试的时候，不敢再拆王伯城墙，但会用他的圣水造各种高级兵，用他的黄金造各种高级药水，铺张浪费地试验各种通哥布林最后几关的战术，经常搞到他一晚上颗粒无收再被人推走40万。王伯对此很恼怒，发完脾气后，还得找我请教通哥布林最后几关的战术……
+																		</div>
+																		<div>
+																			<br>
+																		</div>
+																		<div>
+																			8、王伯玩COC是个奇葩，很少捐兵，频繁要兵。在公会内的捐兵记录通常是要兵数的1/10，有次创造了一个统计周期内捐兵数为0的记录，心理素质十分强大。我经常拿这个奚落他，然后就被王公会长……降级了，并威胁要踢我出公会。天理何在。
+																		</div>
+																		<div>
+																			<br>
+																		</div>
+																		<div>
+																			9、 蝉小队全员玩COC，有段时间找工程师凌叔提需求的时候，他的口头禅是“先捐2条龙来”。答：“在造了在造了”，这才肯听我讲需求。有次我在研发中途大改
+																			样式，跟他道歉，气呼呼回答：“不捐10个5级野猪骑士哪里来的道歉诚意。”所有人谈工作的时候，经常手机一响，一声惨叫，麻痹被打了，然后放下一切工作
+																			先查看损失数。后来我去携程谈事情的时候，或者面试人的时候，看见消息Push被打了，心痒得要命，但还得死撑住，面部抽搐几下。
+																		</div>
+																		<div>
+																			<br>
+																		</div>
+																		<div>
+																			10、 刚升龙那阵子，蝉小队就我一个人有龙，稀罕得很，大家都抢着让我给捐龙。那时大家等级都低，城堡只能装20人口，一条龙过去就满了。我一开口说捐龙，所有
+																			人都盯着捐兵提示，看见谁申请捐兵，就丢一个弓箭手过去，只剩19人口，要不了龙。办公室里一片鬼哭狼嚎，最阴险的人才能在最后要到龙。回想起来，没发生
+																			群殴还真是奇迹！
+																		</div>
+																	</div>
+																</div>
+																<div class="container-toggle-read-state">
+																	<span class="btn-toggle-read-state">
+																		Mark as Unread
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</article>
+												<article class="feeditem-list">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																蝉小队招聘启事第二季
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																这是 《蝉小队招聘启动，一大波职位正在向你靠近》 的第二季，招聘还在继续。 之所以出第二季，是因为上一篇招聘启事的容量有限，文体正经，并不能完整表达我对于这次招聘的想法。来，讲正题。
+																▎关于Android产品经理 之前找同行推荐PM，被反问道，你不就是PM吗，还招什么招。 答，蝉游记大的框架已经搭建好了(最重要的1/3还没有发布出来)，接下来我的精力会大部分转向内容运营，同时我对And...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/70743762013911111845893">
+																		Oct 11
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F70743762013911111845893&amp;via=Digg&amp;text=%E8%9D%89%E5%B0%8F%E9%98%9F%E6%8B%9B%E8%81%98%E5%90%AF%E4%BA%8B%E7%AC%AC%E4%BA%8C%E5%AD%A3"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F70743762013911111845893&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																招聘以及应聘写作指南
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																▎招聘写作指南 这是 《初创团队招聘启事写作指南》 的第二季。 第一季发出来以后，有人评价说，你写这么多博客，就这篇还有些帮助。 我对此一点都不惊讶。之前参加过几十场培训会，分享会，看过几千篇互联网经验总结，只有一次关于招聘的两天培训，其中两小时的内容让我觉得“颇有所得”。复述一遍太过累赘，只介绍我消化过的，“如何写招聘启事”这部分吧。
+																首先，请看 《初创团队招聘启事写作指南》 。 ...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/7074376201391111112210">
+																		Oct 11
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201391111112210&amp;via=Digg&amp;text=%E6%8B%9B%E8%81%98%E4%BB%A5%E5%8F%8A%E5%BA%94%E8%81%98%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201391111112210&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																初创团队招聘启事写作指南
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																刚开始创业的小团队有什么招聘途径呢？无非是发微博自曝，托朋友介绍，上论坛挖宝，找牛人谈心。当然，有效率低到垂泪。 我在网易干了五年，去年辞职创业，和拍档凭空组建团队，两个月内请回来4个资历相当不错的同伴，分别来自博雅、盛大、携程与网易。快速组建蝉小队主要靠一招：啰啰嗦嗦写一封公开邀请函……俗称招聘启事。在我看来这是最重要，也最容易被轻视的环节。
+																打招聘广告，首先得分析顾客心理，有可能加入...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/70743762013826102047241">
+																		Sep 26
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F70743762013826102047241&amp;via=Digg&amp;text=%E5%88%9D%E5%88%9B%E5%9B%A2%E9%98%9F%E6%8B%9B%E8%81%98%E5%90%AF%E4%BA%8B%E5%86%99%E4%BD%9C%E6%8C%87%E5%8D%97"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F70743762013826102047241&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																蝉小队招聘启动，一大波职位正在向你靠近
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																hi， 我是蝉游记lv2。你们可能认识我的小伙伴蝉游记lv1，一款以华丽画卷为卖点的游记制作工具，有 网站版 与iPhone、iPad版本，在今年极客公园举办的创新产品大赛中，拿过“最佳体验奖”，App多次进入AppStore首页编辑选荐。
+																现在，lv1升级到了lv2，蝉小队招聘启动，一大波职位正在向你靠近。 提前点名：Android工程师，Android产品经理，目的地运营，市场营销，UI设...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/707437620138252491850">
+																		Sep 25
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620138252491850&amp;via=Digg&amp;text=%E8%9D%89%E5%B0%8F%E9%98%9F%E6%8B%9B%E8%81%98%E5%90%AF%E5%8A%A8%EF%BC%8C%E4%B8%80%E5%A4%A7%E6%B3%A2%E8%81%8C%E4%BD%8D%E6%AD%A3%E5%9C%A8%E5%90%91%E4%BD%A0%E9%9D%A0%E8%BF%91"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620138252491850&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																用QQ邮箱发一封求职信
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																用QQ邮箱发一封求职信，这事儿最近闹得火热。且不谈事主的言语出格——单说“QQ邮箱发求职信合适吗”？ 1、 单看用户覆盖数，QQ邮箱在国内应该是老大，国外邮箱用户则是小众。从统计学的角度，国外邮箱用户的平均素质当然优于QQ邮箱，和211毕业生平均素质优于普通大学，台湾人平均素质优于大陆人是一个道理。
+																在知乎讨论帖里，有个人的回复很有意思，说曾经用算法分析了某企业的4000封简历，寻找未通...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/7074376201382202351494">
+																		Sep 22
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201382202351494&amp;via=Digg&amp;text=%E7%94%A8QQ%E9%82%AE%E7%AE%B1%E5%8F%91%E4%B8%80%E5%B0%81%E6%B1%82%E8%81%8C%E4%BF%A1"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201382202351494&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.45 垂直网站编辑的转型构想
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																我是 一名在IT垂直网站工作了七年的评测编辑，感觉这个行业“路越走越窄”，从同时期入职的编辑来看，出路基本就三个：1.去平时经常和编辑打交道的公关公司
+																上班，完成从乙方到甲方的转换。2.去新浪腾讯搜狐网易等门户的科技数码频道继续当编辑。3.去其它IT垂直网站做编辑。 但是，1.我不善交际又有“脸盲症”，不太适合当公关。2.今天我们网站已经做的很大，门户的科技数码频道已经不像前几年那样有吸引力了。...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/70743762013871051634">
+																		Sep 7
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F70743762013871051634&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.45+%E5%9E%82%E7%9B%B4%E7%BD%91%E7%AB%99%E7%BC%96%E8%BE%91%E7%9A%84%E8%BD%AC%E5%9E%8B%E6%9E%84%E6%83%B3"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F70743762013871051634&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.44 产品汪想跳槽
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																来信一： 我是一个软件项目的经理，呆了4年多，从开始的产品策划到后面的运营主管，再到现在的项目经理，面临一个让我很难抉择的问题，就是权和钱。
+																一直有个上级在我上面，我在很多事情上没有决策权，很多idea得不到重视。在钱方面，做了4年的产品，薪资还不如新进的产品策划，目前底薪还不足6K(补贴，奖金什么的就不计算在内了)。
+																对此我很困惑，想着离职吧，但是又舍不得这款产品，毕竟带了这么久还是有...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/7074376201373194439722">
+																		Aug 31
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201373194439722&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.44+%E4%BA%A7%E5%93%81%E6%B1%AA%E6%83%B3%E8%B7%B3%E6%A7%BD"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201373194439722&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.43 交互设计师向何处去
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																我是 一名在校学生，现在研三了，主要都是做移动端的交互实习，已经实习了一年多了。到今年十一月份，我就要找正式工作了，现在感觉有点小迷茫。 我感觉交互从前两年的大热，到现在已经是式微了，在很多公司很多产品都是PM兼着交互，而且各个公司的交互岗位越来越少，所以我就比较忧虑，怕找不到适合
+																的工作。另外一方面，从事着一年多的交互实习，我也感受到了，交互的位置是有点小尴尬的，不像视觉和开发那样被需要。而...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/7074376201372452618928">
+																		Aug 24
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201372452618928&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.43+%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%90%91%E4%BD%95%E5%A4%84%E5%8E%BB"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201372452618928&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.42 2年汪态度积极全无自信寻找出路
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																小女子今年25岁，做产品2年了，两年来的职业生涯自我感觉比较贫瘠，工作不忙，除了完成份内的工作还有很多自由支配的时间。尽管如此，我仍然算是同事中比较繁忙的一个了，看到有些人靠淘宝、微博打发了一个又一个工作日，换做是我，我一定要疯了。
+																我始终有一种吃不饱的感觉，觉得自己成长太慢，两年来我对所负责的产品越来越了解，所负责的项目也越来成规模，但我始终觉得自己其实什么都不懂什么都不会，除了目前这份...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/7074376201372442213942">
+																		Aug 24
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201372442213942&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.42+2%E5%B9%B4%E6%B1%AA%E6%80%81%E5%BA%A6%E7%A7%AF%E6%9E%81%E5%85%A8%E6%97%A0%E8%87%AA%E4%BF%A1%E5%AF%BB%E6%89%BE%E5%87%BA%E8%B7%AF"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201372442213942&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.41 从易信看大公司标配与虎口夺食
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																现在我所在的团队在做移动通讯app，今天听说网易和电信联手推出易信对抗微信，于是我再次对这个项目产生了怀疑，不知道在这样一个微信独大，line、易信、陌陌等大厂、老厂互殴的领域里，一个小创业团队扎进去的意义在哪里？
+																在一次网易校园宣讲中有同学提问：“新浪微博已经很火了，占领了大部分市场，网易要做微博的理由为何？有什么意义？”宣讲官回道：“并不是说别人做了，我们就不能做，比如说博客，如今已经...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/7074376201372441817138">
+																		Aug 24
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201372441817138&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.41+%E4%BB%8E%E6%98%93%E4%BF%A1%E7%9C%8B%E5%A4%A7%E5%85%AC%E5%8F%B8%E6%A0%87%E9%85%8D%E4%B8%8E%E8%99%8E%E5%8F%A3%E5%A4%BA%E9%A3%9F"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201372441817138&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.40 26岁女青年关于家庭和工作的抉择
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																26 岁女青年，关于家庭和工作的抉择。 87年生的姑娘，现在在一家待遇尚可，稳定且喜欢的事业单位上班，工作清闲并且是自己所感兴趣，城市也喜欢，如果不是房价太贵，考虑定居。但老公不喜欢这
+																个地方，他做销售，到处跑，一个月到我这个城市见一次面，这个城市有他的公司办事处。 最近他工作有变动，要去另外一个城市驻点，我所在城市不是业务范围之一。要再见面，估计三个月以上，担心距离影响感情，还有后续要小孩的...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/707437620137190650448">
+																		Aug 19
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620137190650448&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.40+26%E5%B2%81%E5%A5%B3%E9%9D%92%E5%B9%B4%E5%85%B3%E4%BA%8E%E5%AE%B6%E5%BA%AD%E5%92%8C%E5%B7%A5%E4%BD%9C%E7%9A%84%E6%8A%89%E6%8B%A9"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620137190650448&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.39 怎样引导用户发布高品质图片
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																公司 目前在做一个基于拍照的社交APP，但一段时间的运营结果发现，平常用户的拍的照片的视觉感并不好，构图凌乱，颜色灰暗（可能是光线不太好），导致整个客
+																户端的大厅版面上照片看起来暗暗的一片，让人看了没有拍照的欲望，我想问有什么办法从功能或策略上可以提高用户上传照片的质量，或者说如何引导用户发送高
+																品质的图片，让大多数的照片看赏心悦目些？ 这问题要分两方面来回答。 首先，你很难有方法提升用户UG...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/707437620137190035632">
+																		Aug 19
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620137190035632&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.39+%E6%80%8E%E6%A0%B7%E5%BC%95%E5%AF%BC%E7%94%A8%E6%88%B7%E5%8F%91%E5%B8%83%E9%AB%98%E5%93%81%E8%B4%A8%E5%9B%BE%E7%89%87"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620137190035632&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.38 售前半新人想做产品汪
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																我是 个姑娘，今年26岁，参加工作3年了，没换过工作，一直在这个国企上班。刚参加工作的时候斗志昂扬，充满激情，觉得凡事都可以学，于是对待任何工作上的任
+																务都很努力，一闲下来便很慌乱。 现在回想起来，当时我只是个盲目的执行者，领导分配什么任务就完成什么，缺乏职业规划，于是便忙忙碌碌做了售前支持工作3年。3年中我熟悉了业务，锻炼了
+																较强的文档方案写作能力以及沟通技能，如今却深切感受到自己不断重复在劳动...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/7074376201371191929759">
+																		Aug 11
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201371191929759&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.38+%E5%94%AE%E5%89%8D%E5%8D%8A%E6%96%B0%E4%BA%BA%E6%83%B3%E5%81%9A%E4%BA%A7%E5%93%81%E6%B1%AA"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201371191929759&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.37 应届生、幸福感与无爱的工作
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																我是 一名应届毕业生，学的是服装设计与工程的专业，一心认为投身于自己喜欢的产品会让工作更有幸福感，而我一直偏好豆瓣的产品和其所塑造的用户氛围，因此想去
+																豆瓣工作的念想就一直盘桓在我心头。曾托之前结识的产品经理帮我将简历转交豆瓣，没有回应；也在豆瓣上发豆油给阿北，情深意切的寻求一丝入职指引；而后又
+																找寻出豆瓣读书的产品经理，再次豆油望能寻出一丝指引，同样石沉大海。 我现在正在一家B2B垂直搜索的公...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/7074376201371191123576">
+																		Aug 11
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201371191123576&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.37+%E5%BA%94%E5%B1%8A%E7%94%9F%E3%80%81%E5%B9%B8%E7%A6%8F%E6%84%9F%E4%B8%8E%E6%97%A0%E7%88%B1%E7%9A%84%E5%B7%A5%E4%BD%9C"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201371191123576&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.36 心里好累的产品汪请教如何跨岗位“盯人”
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																我负 责的版本在公司内部不是重点，所以从去年到今年一直面临的问题是：项目人手不够，每个人都跟我说“手里活儿太多，没时间啊”。 这一年，我依次采取了以下解决办法：
+																1、产品会议时，跟研发、UI（UE一直缺人，来了又走，我自己硬着头皮冒充）、测试反复述说——朝着“提升用户数据、提升产品口碑”这个目标走，这样做
+																是我暗自希望可以让大家达成共识“我们在共同维护一款产品”——现在来看，以失败告终； 2...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/7074376201371182529909">
+																		Aug 11
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201371182529909&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.36+%E5%BF%83%E9%87%8C%E5%A5%BD%E7%B4%AF%E7%9A%84%E4%BA%A7%E5%93%81%E6%B1%AA%E8%AF%B7%E6%95%99%E5%A6%82%E4%BD%95%E8%B7%A8%E5%B2%97%E4%BD%8D%E2%80%9C%E7%9B%AF%E4%BA%BA%E2%80%9D"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F7074376201371182529909&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.35 蜀黍问蜀黍中年转型真的困难吗
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																叫你 蜀黍可能不太合适，因为我有可能比你大。先这么叫着吧，等答案确切后再改也不晚。 在互联网行业摸爬滚打10年了，呆过的公司不大不小，出去说还有一定名气。但总是无法突破。一直在尝试改变自己，有些进步但很有限。一直的岗位是产品经
+																理，可能写方案写文档写的太多，我总觉得写东西的时候能写的很有层次和逻辑，但一旦让我跟别人沟通或是讲解方案时，话说的总是很苍白。困扰我很久了。我觉
+																得我在与人正式场合的沟通...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/707437620137117596889">
+																		Aug 11
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620137117596889&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.35+%E8%9C%80%E9%BB%8D%E9%97%AE%E8%9C%80%E9%BB%8D%E4%B8%AD%E5%B9%B4%E8%BD%AC%E5%9E%8B%E7%9C%9F%E7%9A%84%E5%9B%B0%E9%9A%BE%E5%90%97"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F707437620137117596889&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+												<article class="feeditem-list feeditem-read">
+													<div class="feeditem-list-content">
+														<span class="story-data">
+															<span itemprop="headline" class="feeditem-headline">
+																知心怪蜀黍NO.34 二线城市媒体主编的职业迷思
+															</span>
+															<span class="feeditem-description" itemprop="description">
+																我今早恰好在想一个有关媒体的问题，所以看到你的专栏说明里有“媒体”两字就想请教一下你。你的专栏被虎嗅曝光后，预计向你提问的不在少数，我不着急。
+																我在某二线城市做一个游戏媒体的主编，因为进入了媒体这个行业，所以最近一直关注这方面的消息。从前段时间一些有关媒体人的文章来看，很多人都认为做媒体是个苦逼活，工资低，加班多，压力大，不少人最终都是转行公关、产品、创业等等。
+																但是从你的博文来看，你对...
+															</span>
+														</span>
+														<span class="story-actions-container">
+															<span class="story-score">
+															</span>
+															<abbr class="published">
+																<time class="feeditem-fuzzytime">
+																	<a target="_blank" class="timestamp" href="http://firecacada.blog.163.com/blog/static/70743762013628115955642">
+																		Jul 28
+																	</a>
+																</time>
+																<ul class="story-actions">
+																	<li class="story-action-item story-action story-action-thumb">
+																		<a href="#" class="btn-story-action-thumb">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action">
+																		<a href="#" class="btn-story-action-readlater">
+																		</a>
+																	</li>
+																	<li class="story-action-item story-action story-action-share">
+																		<div class="tooltip tooltip-grey tooltip-top tooltip-fade tooltip-story-share">
+																			<ul class="plain-list">
+																				<li class="story-share-tweet">
+																					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F70743762013628115955642&amp;via=Digg&amp;text=%E7%9F%A5%E5%BF%83%E6%80%AA%E8%9C%80%E9%BB%8DNO.34+%E4%BA%8C%E7%BA%BF%E5%9F%8E%E5%B8%82%E5%AA%92%E4%BD%93%E4%B8%BB%E7%BC%96%E7%9A%84%E8%81%8C%E4%B8%9A%E8%BF%B7%E6%80%9D"
+																					class="share-story-link">
+																						Share to Twitter
+																					</a>
+																				</li>
+																				<li class="story-share-fb">
+																					<a href="https://www.facebook.com/dialog/feed?display=popup&amp;app_id=123277257693179&amp;link=http%3A%2F%2Ffirecacada.blog.163.com%2Fblog%2Fstatic%2F70743762013628115955642&amp;redirect_uri=http%3A%2F%2Fdigg.com%2Ffbshare"
+																					class="share-story-link">
+																						Share to Facebook
+																					</a>
+																				</li>
+																			</ul>
+																		</div>
+																		<a href="#" class="btn-story-action-share">
+																		</a>
+																	</li>
+																</ul>
+															</abbr>
+														</span>
+													</div>
+												</article>
+											</div>
+										</section>
+										<div style="display: none;" id="main-region-loading" class="main-region-loading">
+										</div>
+									</div>
+									<div id="view-region-modal">
+									</div>
+									<div id="view-keyboard-shortcut-legend-modal">
+									</div>
+								</div>
+							</div>
+							<form>
+								<input name="_xsrf" value="dab89eab413c4054ab12558d86d8fd9a" type="hidden">
+							</form>
+							<!--[if lte IE 8]>
+								<div class="no-ie-support">
+									<div class="no-ie-support-inner">
+										<div class="no-ie-support-digg-reader-logo">
+										</div>
+										<p>
+											<strong>
+												Internet Explorer 8 and older versions are not currently supported.
+											</strong>
+											<p>
+												If you think you reached this page in error, email us at
+												<a href="mailto:reader@digg.com">
+													reader@digg.com
+												</a>
+											</p>
+											<p>
+												<a href="/">
+													Back to Digg.com
+												</a>
+											</p>
+									</div>
+								</div>
+							<![endif]-->
+						</div>
+					</div>
+					<script src="./js//modernizr.js">
+					</script>
+					<script src="./js//jquery.js">
+					</script>
+					<script src="./js//jquery_002.js">
+					</script>
+					<script src="./js//bootstrap-modal.js">
+					</script>
+					<script src="./js//lodash.js">
+					</script>
+					<script src="./js//almond.js">
+					</script>
+					<script>
+						window.onerror = function(errorMsg, url, line) {
+							var errorDataProvider = $.ajax({
+								url: '/api/miccheck.json',
+								type: 'POST',
+								data: {
+									m: errorMsg,
+									u: url,
+									l: line
+								}
+							});
+						};
+
+						window.BS = {
+							config: {
+								FB_APP_ID: '123277257693179',
+								v: '1.5.2'
+							},
+							features: {
+								"search": true,
+								"polling_scores": false,
+								"saved_stories": true,
+								"homepage_new_stories": true,
+								"signin": true,
+								"homepage_popular_stories": true,
+								"readlater": true,
+								"submit_link": true,
+								"homepage_new_stories_polling": false,
+								"digg": true
+							}
+						};
+					</script>
+					<script>
+						BS.config.subscriptions = {
+							"status": "ok",
+							"data": {
+								"progress": {
+									"unread_polling_interval": 30,
+									"polling_status": 0,
+									"polling_interval": 0
+								},
+								"subscriptions": {
+									"digg.com/saved": {
+										"subs": [{
+											"folders": [{
+												"id": "3",
+												"label": "digg.com/saved"
+											}],
+											"feed_url": "http://digg.com/user/5d5d0f3dd76043668297c47d4b84e0c6/saved.rss",
+											"show": "all",
+											"is_dead": false,
+											"title": "digg.com/saved",
+											"html_url": "http://digg.com/user/5d5d0f3dd76043668297c47d4b84e0c6/saved.rss",
+											"image": null,
+											"view": "list",
+											"subscription_id": "e20a56a522b144cfa32cbbe83829717b",
+											"unread": 0,
+											"mark_as_read_date": 0,
+											"icon": "//static.digg.com/static/images/reader/icon-default@2x.gif"
+										}],
+										"show": "all",
+										"expanded": true,
+										"sort_order": "e20a56a522b144cfa32cbbe83829717b",
+										"unread": 0,
+										"id": "3",
+										"view": "list"
+									},
+									"digg.com/popular": {
+										"subs": [{
+											"folders": [{
+												"id": "6",
+												"label": "digg.com/popular"
+											}],
+											"feed_url": "http://digg.com/user/5d5d0f3dd76043668297c47d4b84e0c6/items/popular.rss",
+											"show": "all",
+											"is_dead": false,
+											"title": "digg.com/popular",
+											"html_url": "",
+											"image": null,
+											"view": "list",
+											"subscription_id": "1da0a20649ed41788c661552fb5498b5",
+											"unread": 0,
+											"mark_as_read_date": 0,
+											"icon": "//static.digg.com/static/images/reader/icon-default@2x.gif"
+										}],
+										"show": "all",
+										"expanded": true,
+										"sort_order": "1da0a20649ed41788c661552fb5498b5",
+										"unread": 0,
+										"id": "6",
+										"view": "list"
+									},
+									"digg.com/all": {
+										"last_updated": 1384763008.0,
+										"subs": [{
+											"folders": [{
+												"id": "4",
+												"label": "digg.com/all"
+											}],
+											"feed_url": "http://digg.com/user/5d5d0f3dd76043668297c47d4b84e0c6/items/all.rss",
+											"show": "all",
+											"is_dead": false,
+											"title": "digg.com/all",
+											"html_url": "",
+											"image": null,
+											"view": "list",
+											"subscription_id": "e3973107b4a7427295e27e2d5d1bef26",
+											"unread": 0,
+											"mark_as_read_date": 0,
+											"icon": "//static.digg.com/static/images/reader/icon-default@2x.gif"
+										}],
+										"show": "all",
+										"expanded": true,
+										"sort_order": "e3973107b4a7427295e27e2d5d1bef26",
+										"unread": 10,
+										"id": "4",
+										"view": "list"
+									},
+									"digg.com/diggs": {
+										"subs": [{
+											"folders": [{
+												"id": "2",
+												"label": "digg.com/diggs"
+											}],
+											"feed_url": "http://digg.com/user/5d5d0f3dd76043668297c47d4b84e0c6/diggs.rss",
+											"show": "all",
+											"is_dead": false,
+											"title": "digg.com/diggs",
+											"html_url": "http://digg.com/user/5d5d0f3dd76043668297c47d4b84e0c6/diggs.rss",
+											"image": null,
+											"view": "list",
+											"subscription_id": "6a7cac57a8c34987a71db1ceba4d1581",
+											"unread": 0,
+											"mark_as_read_date": 0,
+											"icon": "//static.digg.com/static/images/reader/icon-default@2x.gif"
+										}],
+										"show": "all",
+										"expanded": true,
+										"sort_order": "6a7cac57a8c34987a71db1ceba4d1581",
+										"unread": 0,
+										"id": "2",
+										"view": "list"
+									},
+									"digg.com/root": {
+										"subs": [{
+											"folders": [{
+												"id": "1",
+												"label": "digg.com/root"
+											}],
+											"feed_url": "http://firecacada.blog.163.com/rss/",
+											"show": "all",
+											"is_dead": false,
+											"title": "\u574f\u813e\u6c14\u7684\u5c0f\u80a5",
+											"html_url": "http://firecacada.blog.163.com",
+											"image": null,
+											"view": "list",
+											"subscription_id": "4283f4b9c6e74ad0a02bf0dd80f4a285",
+											"unread": 10,
+											"mark_as_read_date": 1377336378,
+											"icon": "//static.digg.com/icons/03b1fc2913e3226bb5fa9590978d202a.ico"
+										}],
+										"show": "all",
+										"sort_order": "4283f4b9c6e74ad0a02bf0dd80f4a285",
+										"unread": 10,
+										"id": "1",
+										"view": "list"
+									}
+								}
+							},
+							"mesg": "all good"
+						};
+					</script>
+					<script src="./js/backbone-min.js"></script>
+					<script src="./js/reader.js"></script>
+					
+					<!-- built with love by amateurs! -->
+					<script src="http://static.chartbeat.com/js/chartbeat.js" type="text/javascript"
+					language="javascript">
+					</script>
+				</body>
+				
+				</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title> {% block title %}悦读{% endblock %}</title>
+        <meta name="description" content="" />
+        <meta name="author" content="zhengbiao" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta property="wb:webmaster" content="2488eba5fce3edd3" />
+        <meta property="qc:admins" content="2355567507776316110063757" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="stylesheet" type="text/css" href="/static/css/welcome.css" />
+    </head>
+
+    <body class="welcome">
+        <div id="content-main" class="content-main">
+            <div class="content-primary" role="main">
+                <div id="onboarding-billboard" class="onboarding-billboard">
+                    <div id="onboarding-step-welcome" class="onboarding-step onboarding-step-signup m-reg">
+                        <h1 id="digg-reader-logo" class="onboarding-hed digg-reader-logo logo-large">Digg Reader</h1>
+
+                        <div class="contc f-cb" id="login">
+                            <div class="contl">
+                                <h3>使用邮箱登录</h3>
+{{ field.errors }}
+
+                                <form action="/login" onsubmit="return false;" class="ztag" method="post">
+                                    <ul class="w-user w-user-1">
+                                        <li class="w0">
+                                            <div class="inpt ztag">
+                                                <label class="ztag">邮箱</label>
+                                                <input type="text" class="txt" name="email" id="action-login-email" placeholder="邮箱" tabindex="1">
+                                            </div>
+                                        </li>
+                                        <li class="w0">
+                                            <div class="inpt">
+                                                <label class="ztag">密码</label>
+                                                <input type="password" autocomplete="off" id="action-login-password" placeholder="密码"  class="txt ztag" name="password" tabindex="2">
+                                            </div>
+                                        </li>
+                                        <li class="w0 w2">
+                                            <button class="btn ztag" type="submit" id="action-login" tabindex="4">
+                                                <span>登录</span>
+                                            </button>
+                                        </li>
+                                        <li class="w0 w3 f-cb">
+                                            <a  href="javascript:;" class="chkbox ztag" data-type="register">注册一个帐号？</a>
+                                            <a  href="javascript:;" class="fgt" data-type="forget">忘记密码？</a>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="contr">
+                                <h3>使用社交帐号登录</h3>
+                                <div class="others">
+                                    <span class="sepln"></span>
+                                    <span class="septxt">或</span>
+                                    <ul id="otherLogin1" class="w-user w-user-3">
+                                        <li class="w1 sina">
+                                            <div id="btn-facebook-auth">
+                                                <button id="" class="btn-action btn-facebook-auth" href="javascript:;">
+                                                    新浪微博登录
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="w1 qq">
+                                            <div id="btn-twitter-auth">
+                                                <button id="" class="btn-action btn-twitter-auth" href="javascript:;">
+                                                    腾讯QQ登录
+                                                </button>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contc f-cb" id="register" style="display:none">
+                            <div class="contl">
+                                <h3>使用邮箱注册</h3>
+                                <form action="http://diggg.sinaapp.com/before_register/" onsubmit="return false;" class="ztag" method="post">
+                                    <ul class="w-user w-user-1">
+                                        <li class="w0">
+                                            <div class="inpt ztag">
+                                                <label class="ztag">邮箱</label>
+                                                <input type="text" id="action-register-input" class="txt" placeholder="邮箱" tabindex="1">
+                                            </div>
+                                        </li>
+                                        <li class="w0 w2">
+                                            <button class="btn ztag" id="action-register" type="submit" tabindex="4">
+                                                <span>注册</span>
+                                            </button>
+                                        </li>
+&#14;                                    </ul>
+									{% csrf_token %}
+                                </form>
+                            </div>
+                            <div class="contr">
+                                <h3>用已有的帐号登录</h3>
+                                <div class="others">
+                                    <span class="sepln"></span>
+                                    <span class="septxt">或</span>
+                                    <ul id="otherLogin1" class="w-user w-user-3">
+                                        <li class="w1 sina">
+                                            <button data-type="login" style="width: 120px;" tabindex="4" type="button" class="btn-action ">
+                                                <span>登录</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contc f-cb" id="forget" style="display:none">
+                            <div class="contl">
+                                <h3>使用邮箱</h3>
+                                <form action="diggg.sinaapp.com/register" onsubmit="return false;" class="ztag" method="post">
+                                    <ul class="w-user w-user-1">
+                                        <li class="w0">
+                                            <div class="inpt ztag">
+                                                <label class="ztag">邮箱</label>
+                                                <input type="text" class="txt" placeholder="邮箱" tabindex="1">
+                                            </div>
+                                        </li>
+                                        <li class="w0 w2">
+                                            <button class="btn ztag" type="submit" id="action-forget" tabindex="4">
+                                                <span >找回密码</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                            <div class="contr">
+                                <h3>重新注册帐号</h3>
+                                <div class="others">
+                                    <span class="sepln"></span>
+                                    <span class="septxt">或</span>
+                                    <ul id="otherLogin1" class="w-user w-user-3">
+                                        <li class="w1 sina">
+                                            <button style="width: 120px;" data-type="register" tabindex="4" type="button" class="btn-action ">
+                                                <span>注册</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contc f-cb" id="registerSucc" style="display:none">
+                            <div class="">
+                                <h3>邮件发送成功</h3>
+                                <p>我们已经将激活邮件发送到您的邮箱：<span id="mailAddress"></span></p>
+                                <p>请前往你的邮箱查看，若没有收到邮件，请检查您的垃圾邮箱或者 <a  href="javascript:;" class="chkbox ztag" data-type="register">重新发送</a></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1691386856" type="text/javascript" charset="utf-8"></script>
+        <script src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" type="text/javascript" data-appid="100569964" data-redirecturi="http://diggg.sinaapp.com/loginBack/" charset="utf-8"></script>
+        <script type="text/javascript" src="/static/js/libs/seaJs/sea-debug.js"></script>
+        <script type="text/javascript">
+            seajs.use("/static/js/init");
+        </script>
+    </body>
+</html>
